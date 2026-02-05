@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App - Your City</title>"
+    <title>Weather App - Your City</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="container">
     <div class="weather-card">
         <div class="location-selector">
-            <label for="city-selector">Selector City/Town:</label>
-            <select id="city-select">
+            <label for="city-selector">Select City/Town:</label>
+            <select id="city-selector">
                 <option value="Pretoria">Pretoria</option>
-                <option value="Centuriom">Centurion</option>
+                <option value="Centurion">Centurion</option>
                 <option value="Midrand">Midrand</option>
                 <option value="Soshanguve">Soshanguve</option>
                 <option value="Ekangala">Ekangala</option>
@@ -35,25 +36,26 @@
                 <img id="weather-icon" src="" alt="weather icon">
             </div>
 
-            <div class="details">
+            <div class="detail-item">
                 <p class="label">Feels Like</p>
-                <p id="humidity" class="value">-- °C</p>
+                <p id="feels-like" class="value">-- °C</p>
             </div>
 
             <div class="detail-item">
                 <p class="label">Wind Speed</p>
-                <p id="wind-speed"class="value">-- m/s</p>
+                <p id="wind-speed" class="value">-- m/s</p>
             </div>
 
             <div class="detail-item">
                 <p class="label">Pressure</p>
-                <p id="pressure" class="value"></p>
+                <p id="pressure" class="value">-- hPa</p>
             </div>
 
-            <div id="error-message" class="error message hidden"></div>
+            <div id="error-message" class="error-message hidden"></div>
 
         </div>
 
+    </div>
     </div>
 
     <script src="js/app.js"></script>
